@@ -1,0 +1,159 @@
+body {
+  background: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1500&q=80');
+  background-repeat: repeat;
+  background-size: 400px 250px;
+  color: white; /* Changed from black to white */
+  font-style: italic;
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3em; /* Increased font size */
+}
+
+
+#first-head, #second-head {
+  text-align: center;
+  font-family: Times, serif;
+  margin-top: 20px;
+  color: white; /* Ensure headings are also white */
+}
+
+
+.body-container {
+  background-color: whitesmoke;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 24px auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+
+.left-container {
+  flex: 0 0 40%;         
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+#post-detail {
+  flex: 1;                
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+
+
+.post-item {
+  background-color: lightgray;
+  border-left: 4px solid whitesmoke;
+  padding: 10px;
+  margin: 12px 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+
+
+button {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-style: normal;
+  font-family: inherit;
+}
+
+button:hover {
+  background-color: #add8e6;
+  color: #004080; 
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 64, 128, 0.3);
+}
+
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  background: lightblue;
+  color: white;
+  border-radius: 4px;
+}
+
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 12px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+
+@media (max-width: 768px) {
+  .body-container, .left-container, #post-detail, .post-item {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 16px 0;
+    padding: 10px;
+  }
+  #first-head, #second-head {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  body {
+    font-size: 1em;
+  }
+}
+/* Classy button base */
+.btn.classy-btn {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 24px;
+  margin: 5px 2px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn.classy-btn:hover {
+  background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(44,62,80,0.15);
+}
+
+.main-header {
+  background: rgba(24, 40, 72, 0.85);
+  padding: 24px 0 10px 0;
+  text-align: center;
+  border-bottom: 2px solid #4b6cb7;
+}
+
+.main-footer {
+  background: rgba(24, 40, 72, 0.85);
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+  margin-top: 40px;
+  font-size: 1em;
+  border-top: 2px solid #4b6cb7;
+}
