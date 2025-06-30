@@ -1,5 +1,5 @@
 body {
-  background: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1500&q=80');
+  background: rgb(22, 22, 197);
   background-repeat: repeat;
   background-size: 400px 250px;
   color: white; /* Changed from black to white */
@@ -15,7 +15,7 @@ body {
   text-align: center;
   font-family: Times, serif;
   margin-top: 20px;
-  color: white; /* Ensure headings are also white */
+  color: rgb(145, 143, 143); /* Ensure headings are also white */
 }
 
 
